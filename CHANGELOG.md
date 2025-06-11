@@ -2,6 +2,10 @@
 add a gradient to the button.
 add a spring effect on tapping a handler of a button
 
+## [2.1.1] : 11/06/25.
+### Breaking Changes
+* Removed Vibration and Shimmer package
+
 ## [2.1.0] : 15/01/23.
 ### Breaking Changes
 * Changed Function action => Future<bool> Function() action
