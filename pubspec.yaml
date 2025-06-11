@@ -1,7 +1,7 @@
 name: slider_button
 description: Customizable slider button widget for activating/deactivating some event.
-version: 2.1.1
-homepage: https://github.com/anirudhsharma392/Slider-Button
+version: 2.1.2
+homepage: https://github.com/nahidulislamshakin/Slider-Button_package.git
 
 environment:
   sdk: ^3.7.2

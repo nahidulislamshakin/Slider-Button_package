@@ -6,6 +6,14 @@ add a spring effect on tapping a handler of a button
 ### Breaking Changes
 * Removed Vibration and Shimmer package
 
+## [2.1.2] : 11/06/25.
+### Breaking Changes
+* added trailing widget parameter
+
+## [2.1.1] : 11/06/25.
+### Breaking Changes
+* Removed Vibration and shimmer packages
+
 ## [2.1.0] : 15/01/23.
 ### Breaking Changes
 * Changed Function action => Future<bool> Function() action
