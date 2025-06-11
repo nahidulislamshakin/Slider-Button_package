@@ -30,7 +30,6 @@ class SliderButton extends StatefulWidget {
   final Widget? icon;
   final Future<bool?> Function() action;
 
-
   ///The offset threshold the item has to be dragged in order to be considered
   ///dismissed e.g. if it is 0.4, then the item has to be dragged
   /// at least 40% towards one direction to be considered dismissed
@@ -39,7 +38,7 @@ class SliderButton extends StatefulWidget {
   final bool disable;
 
   /// Trailing widget
- final Widget? trailing;
+  final Widget? trailing;
 
   SliderButton({
     required this.action,
@@ -92,10 +91,7 @@ class _SliderButtonState extends State<SliderButton> {
       alignment: Alignment.centerLeft,
       children: <Widget>[
         Container(alignment: widget.alignLabel, child: widget.label),
-        Align(
-          alignment: Alignment.centerRight,
-          child: widget.trailing,
-        ),
+        Align(alignment: Alignment.centerRight, child: widget.trailing),
         widget.disable
             ? Tooltip(
               verticalOffset: 50,

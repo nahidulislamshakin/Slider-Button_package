@@ -41,7 +41,7 @@ class MainApp extends StatelessWidget {
                 semanticLabel: 'Text to announce in accessibility modes',
               )),
               boxShadow: BoxShadow(
-                color: Colors.black.withOpacity(0.3),
+                color: Colors.black.withValues(alpha: 0.3),
                 blurRadius: 4,
               ),
             )),
@@ -73,8 +73,6 @@ class MainApp extends StatelessWidget {
                 color: Colors.black,
                 blurRadius: 4,
               ),
-
-
 
               ///Change All the color and size from here.
               width: 230,
