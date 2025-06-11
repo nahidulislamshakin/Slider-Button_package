@@ -74,8 +74,7 @@ class MainApp extends StatelessWidget {
                 blurRadius: 4,
               ),
 
-              //Adjust effects such as shimmer and flag vibration here
-              shimmer: true,
+
 
               ///Change All the color and size from here.
               width: 230,

@@ -30,8 +30,6 @@ class SliderButton extends StatefulWidget {
   final Widget? icon;
   final Future<bool?> Function() action;
 
-  ///Make it false if you want to deactivate the shimmer effect.
-  final bool shimmer;
 
   ///The offset threshold the item has to be dragged in order to be considered
   ///dismissed e.g. if it is 0.4, then the item has to be dragged
@@ -40,12 +38,14 @@ class SliderButton extends StatefulWidget {
 
   final bool disable;
 
+  /// Trailing widget
+ final Widget? trailing;
+
   SliderButton({
     required this.action,
     this.radius = 100,
     this.boxShadow,
     this.child,
-    this.shimmer = true,
     this.height = 70,
     this.buttonSize,
     this.buttonWidth,
@@ -59,6 +59,7 @@ class SliderButton extends StatefulWidget {
     this.icon,
     this.dismissThresholds = 0.75,
     this.disable = false,
+    this.trailing,
   }) : assert((buttonSize ?? 60) <= (height));
 
   @override
@@ -91,6 +92,10 @@ class _SliderButtonState extends State<SliderButton> {
       alignment: Alignment.centerLeft,
       children: <Widget>[
         Container(alignment: widget.alignLabel, child: widget.label),
+        Align(
+          alignment: Alignment.centerRight,
+          child: widget.trailing,
+        ),
         widget.disable
             ? Tooltip(
               verticalOffset: 50,
